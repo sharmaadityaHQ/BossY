@@ -11,6 +11,7 @@ You should have `node` installed in your system.
 **1.** The front-end is made using React, HTML and CSS and you can customize the look of the Boss Machine by accessing the code in `browser` and `public` folders.  
 **2.** The back-end is made using `Express.js` and is present in the `server` folder.  
 **3.** The tests are written using Mocha and Chai as the assertion library.    
+**4.** The database is organised using JavaScript and is present in `db.js` under `server` directory. The database uses `faker.js` to generate massive amounts of realistic fake data in `Node.js` and the `browser`.
 ### Contribution  
 Start working on a feature by making a separate branch and make commits with meaningful messages. Feel free to open new issues if you encounter bugs or want to suggest some enhancement in the app.  
 ### Testing  
