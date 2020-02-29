@@ -33,7 +33,7 @@ const AllIdeas = ({ ideas }) => {
               <td />
               <td id="add-idea-td">
                 <Link to="/ideas/new">
-                <img id="add-idea" className="button" src="public/img/add_button.svg" alt="add minion"/>
+                <img id="add-idea" className="button" src="public/img/plus.svg" alt="add minion"/>
                 </Link>
               </td>
             </tr>
