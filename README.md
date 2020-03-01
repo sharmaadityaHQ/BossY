@@ -6,7 +6,7 @@ You should have `node` installed in your system.
 **1.** `git clone https://github.com/sharmaaditya570191/BossY.git`  
 **2.** Run `npm install` in the root directory to install the dependencies.  
 **3.** Run `node server.js` in the root directory.  
-**4.** [Click here!]( https://sharmaaditya570191.github.io/BossY/index.html)  
+**4.** [Click here!]( https://Samriddhi25.github.io/BossY/index.html)  
 ### Technology Stack  
 **1.** The front-end is made using React, HTML and CSS and you can customize the look of the Boss Machine by accessing the code in `browser` and `public` folders.  
 **2.** The back-end is made using `Express.js` and is present in the `server` folder.  
