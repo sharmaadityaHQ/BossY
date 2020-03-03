@@ -20,6 +20,8 @@ import Home from './components/Home';
 import AllIdeas from './components/AllIdeas';
 import Idea from './components/Idea';
 import Minion from './components/Minion';
+import Login from './components/login';
+import Signup from './components/signup';
 
 const appEnter = nextRouterState => {
   Promise.all([
@@ -99,6 +101,8 @@ ReactDOM.render(
       <Route path="/" component={App} onEnter={appEnter}>
         <IndexRoute component={Home} />
         <Route path="/minions" component={AllMinions} />
+        <Route path="/login" component={Login} />
+        <Route path="/signup" component={Signup} />
         <Route path="/minions/new" onEnter={newMinionEnter} components={Minion} />
         <Route path="/minions/:id" onEnter={singleMinionEnter} components={Minion} />
         <Route path="/ideas" onEnter={allIdeasEnter} components={AllIdeas} />

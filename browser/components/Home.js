@@ -10,7 +10,7 @@ const Home = ({ cancelMeetings }) => {
   return (
     <div id="landing-page">
       <div id="launch-buttons">
-        <Link to="/minions">
+        <Link to="/login">
           <div id="minions-launch" className="button launch-button">
             <img className="button launch-icon" src="public/img/minion_icon_home.svg" alt="" />
             <div className="button label launch-label">

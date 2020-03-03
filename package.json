@@ -12,7 +12,7 @@
   "author": "Codecademy",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.19.2",
     "body-parser": "^1.17.2",
     "chai": "^4.1.1",
     "cors": "^2.8.4",
