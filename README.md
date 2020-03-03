@@ -13,7 +13,11 @@ You should have `node` installed in your system.
 **3.** The tests are written using Mocha and Chai as the assertion library.    
 **4.** The database is organised using JavaScript and is present in `db.js` under `server` directory. The database uses `faker.js` to generate massive amounts of realistic fake data in `Node.js` and the `browser`.
 ### Contribution  
-Start working on a feature by making a separate branch and make commits with meaningful messages. Feel free to open [new-issues](https://github.com/sharmaaditya570191/BossY/issues/new) if you encounter bugs or want to suggest some enhancement in the app.  
+To start the development enviroment.
+**1.** Open the index.html file by using live server(extension available in vs-code).
+**2.** Run the `npm run start-dev` script. 
+
+Now start working on a feature by making a separate branch and make commits with meaningful messages. Feel free to open [new-issues](https://github.com/sharmaaditya570191/BossY/issues/new) if you encounter bugs or want to suggest some enhancement in the app.  
 ### Testing  
 Tests are given in the `test/test.js` file. To run the tests, first open the root project directory in your terminal. Then run `npm run test`. You will see a list of tests that ran with information about whether or not each test passed. 
 
