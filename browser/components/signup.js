@@ -2,11 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router";
 
-class Signup extends Component {
-  signup() {
-    //Send the data of the user to the database.
-  }
-  render() {
+const Signup = () => {
+
     return (
       <div>
         <h1 className="label">SIGNUP</h1>
@@ -37,7 +34,10 @@ class Signup extends Component {
         </Link>
       </div>
     );
-  }
+}
+
+const signup = () => {
+  //Storing the details in the database.
 }
 
 export default Signup;
