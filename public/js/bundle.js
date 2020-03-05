@@ -34039,7 +34039,11 @@ var Login = function Login() {
     _react2.default.createElement(
       "p",
       null,
-      "Don't have an account, Sigup then."
+      "Don't have an account,",
+      _react2.default.createElement("br", null),
+      " ",
+      _react2.default.createElement("br", null),
+      " Sigup then."
     ),
     _react2.default.createElement("br", null),
     _react2.default.createElement(
