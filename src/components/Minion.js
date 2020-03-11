@@ -19,10 +19,10 @@ class Minion extends Component {
     }
   }
 
-  componentWillReceiveProps (newProps) {
-    this.setState({
+  static getDerivedStateFromProps(newProps, state) {
+    return {
       minion: newProps.minion
-    })
+    };
   }
 
   handleChange = e => {

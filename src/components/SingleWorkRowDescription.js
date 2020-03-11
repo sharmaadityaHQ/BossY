@@ -11,6 +11,7 @@ const SingleWorkRowDescription = ({ work, idx, toggleEdit, deleteWork }) => {
           className='button'
           onClick={() => deleteWork(work)}
           src={`../assets/img/x_button${idx % 2 === 0 ? '-trans' : ''}.svg`}
+          alt=''
         />
       </td>
       <td className='work-title'>{work.title}</td>
