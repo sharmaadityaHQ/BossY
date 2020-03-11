@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const helmet = require('helmet');
 const cors = require('cors');
 const morgan = require('morgan');
 const app = express();
@@ -12,6 +13,7 @@ const PORT = process.env.PORT || 4001;
 
 app.use(morgan('tiny'));
 
+app.use(helmet());
 // Add middleware for handling CORS requests from index.html
 app.use(cors());
 
