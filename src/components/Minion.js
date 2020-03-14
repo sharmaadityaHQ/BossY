@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Link } from 'react-router'
+import { Link } from '@reach/router'
 
 import { updateMinionThunk, createMinionThunk } from '../store/minions'
 
@@ -12,6 +12,7 @@ import Arrow from '../assets/img/arrow.svg'
 class Minion extends Component {
   constructor (props) {
     super(props)
+    props.id ? this.props.onEnter({id: props.id}) : this.props.onEnter();
     let editing = props.newMinion ? true : false
     this.state = {
       editing: editing,

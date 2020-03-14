@@ -1,7 +1,8 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
 import { Provider } from 'react-redux'
-import { Router, Route, hashHistory, IndexRoute } from 'react-router'
+import { Router } from '@reach/router'
+import { createHashHistory } from 'history'
 import axios from 'axios'
 import * as serviceWorker from './serviceWorker'
 import store from './store/index'
@@ -46,7 +47,9 @@ const appEnter = nextRouterState => {
 
 const singleMinionEnter = nextRouterState => {
   store.dispatch(resetEditingState())
-  const id = nextRouterState.params.id
+  console.log(nextRouterState);
+  
+  const id = nextRouterState.id
   axios
     .get(`http://localhost:4001/api/minions/${id}`)
     .then(res => res.data)
@@ -65,7 +68,7 @@ const singleMinionEnter = nextRouterState => {
 }
 
 const singleIdeaEnter = nextRouterState => {
-  const id = nextRouterState.params.id
+  const id = nextRouterState.id
   axios
     .get(`http://localhost:4001/api/ideas/${id}`)
     .then(res => res.data)
@@ -104,26 +107,28 @@ const allIdeasEnter = () => {
   store.dispatch(resetEditingState())
 }
 
+let history = createHashHistory({
+  hashType: 'slash'
+});
+
 ReactDOM.render(
   <Provider store={store}>
-    <Router history={hashHistory}>
-      <Route path='/' component={App} onEnter={appEnter}>
-        <IndexRoute component={Home} />
-        <Route path='/minions' component={AllMinions} />
-        <Route
+    <Router history={history}>
+      <App path='/' onEnter={appEnter()}>
+        <Home path="/" />
+        <AllMinions path='/minions'/>
+        <Minion
           path='/minions/new'
           onEnter={newMinionEnter}
-          components={Minion}
         />
-        <Route
+        <Minion
           path='/minions/:id'
           onEnter={singleMinionEnter}
-          components={Minion}
         />
-        <Route path='/ideas' onEnter={allIdeasEnter} components={AllIdeas} />
-        <Route path='/ideas/new' onEnter={newIdeaEnter} components={Idea} />
-        <Route path='/ideas/:id' onEnter={singleIdeaEnter} components={Idea} />
-      </Route>
+        <AllIdeas path='/ideas' onEnter={allIdeasEnter()} />
+        <Idea path='/ideas/new' onEnter={newIdeaEnter} />
+        <Idea path='/ideas/:id' onEnter={singleIdeaEnter} />
+      </App>
     </Router>
   </Provider>,
   document.getElementById('root')
