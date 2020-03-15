@@ -1,9 +1,10 @@
-import React from "react";
-import { Link } from "react-router";
+import React from 'react';
+import { Link } from 'react-router';
 
 const Heading = () => {
   return (
     <div id="heading">
+    
       <div id="logo">
         <Link to="/">
           <img
@@ -20,7 +21,7 @@ const Heading = () => {
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default Heading;
