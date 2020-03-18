@@ -1,8 +1,6 @@
-# BossY - How to Contribute?
+## How to contribute?
 
-Thank you so much for your interest in contributing!. We love your input!
-
-The Project Team looks forward to your contributions.
+Thank you so much for showing interest in the project.
 
 We want to make contributing to this project as easy and transparent as possible, whether it's:
 
@@ -10,22 +8,17 @@ We want to make contributing to this project as easy and transparent as possible
 - Discussing the current state of the code
 - Submitting a fix
 - Proposing new features
-- Becoming a maintainer
-
-## We Develop with Github
-
-We use github to host code, to track issues and feature requests, as well as accept pull requests.
+- Becoming a collaborator
 
 ## What should I know before I get started?
 
-- Basic knowledge of programming
+- Basic knowledge of `React.js` and `Express.js`
 - Ability to use Git and Github
 - Willingness to learn more
 - UI/UX skills are appreciable but not mandatory
 
-## We Use [Github Flow](https://guides.github.com/introduction/flow/index.html), So All Code Changes Happen Through Pull Requests
 
-Pull requests are the best way to propose changes to the codebase (we use [Github Flow](https://guides.github.com/introduction/flow/index.html)). We actively welcome your pull requests:
+Pull requests are the best way to propose changes to the codebase. We actively welcome your pull requests.
 
 ## How to contribute:
 
@@ -66,10 +59,6 @@ git push -u origin <your_branch_name>
 
 **8.** Create a Pull Request!
 
-**Note: Make Pull Request to the test branch instead of master branch.**
-
-**Congratulations!** Sit and relax, you've made your contribution to [BossY](https://github.com/sharmaaditya570191/BossY) project.
-
-## Report bugs using Github's [issues](https://github.com/sharmaaditya570191/BossY/issues)
+**Congratulations!** Sit and relax till we review your PR, you've made your contribution to [BossY](https://github.com/sharmaaditya570191/BossY) project.
 
 We use GitHub issues to track public bugs. Report a bug by [opening a new issue](https://github.com/sharmaaditya570191/BossY/issues/new); it's that easy!
