@@ -14,10 +14,10 @@ class SingleWorkRow extends Component {
     }
   }
 
-  componentWillReceiveProps(newProps) {
-    this.setState({
-      work: newProps.work
-    });
+  static getDerivedStateFromProps(newProps, state) {
+      return {
+        work: newProps.work
+      };
   }
 
   handleChange = e => {
