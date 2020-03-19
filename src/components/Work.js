@@ -8,10 +8,6 @@ import { updateWorkThunk, createWorkThunk } from "../store/work";
 const Work = ({ createWork, selectedMinion, work, updateWork }) => {
 	const [editNewWork, editNewWorkState] = useState(false);
 
-	const toggleEdit = () => {
-		editNewWorkState(prev => !prev);
-	};
-
 	const saveNewWork = work => {
 		createWork(work);
 		editNewWorkState(false);
@@ -60,7 +56,7 @@ const Work = ({ createWork, selectedMinion, work, updateWork }) => {
 						<td />
 						<td />
 						<td>
-							<div onClick={toggleEdit} className="button add-work-button">
+							<div onClick={() => editNewWorkState(!editNewWork)} className="button add-work-button">
 								{editNewWork ? "Cancel" : "Add Work"}
 							</div>
 						</td>
