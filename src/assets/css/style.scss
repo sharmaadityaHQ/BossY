@@ -31,7 +31,7 @@ a {
 }
 
 #logo-img {
-  height: 100%
+  height: 100%;
 }
 
 #title {
@@ -70,10 +70,10 @@ a {
   width: 140px;
   height: 122px;
   border: solid 1.5px #ff4f58;
-}
 
-.launch-button:hover {
-  border: solid 1.5px #fff;
+  &:hover {
+    border: solid 1.5px #fff;
+  }
 }
 
 .launch-icon {
@@ -93,12 +93,15 @@ a {
   justify-content: center;
   flex-direction: column;
   margin-top: 5px;
+
+  &:active {
+    color: #fff;
+  }
 }
 
-.launch-label:active, .launch-button:active .launch-label {
+.launch-button:active .launch-label {
   color: #fff;
 }
-
 
 .meetings-label {
   text-transform: uppercase;
@@ -179,36 +182,41 @@ thead {
   letter-spacing: 0.9px;
   text-align: left;
   text-transform: uppercase;
-}
-
-thead, tbody {
   padding: 5px 5px;
 }
 
-#meetings-landing td {
-  line-height: 70px;
-  font-size: 11.2px;
-  letter-spacing: 0.8px;
-  text-align: left;
+tbody {
+  padding: 5px 5px;
 }
 
-#meetings-landing tbody > tr {
-  height: 70px;
+#meetings-landing {
+  td {
+    line-height: 70px;
+    font-size: 11.2px;
+    letter-spacing: 0.8px;
+    text-align: left;
+  }
+
+  tbody > tr {
+    height: 70px;
+  }
 }
 
-#ideas-landing td {
-  line-height: 35px;
-  font-size: 11.2px;
-  letter-spacing: 0.8px;
-  text-align: left;
-}
+#ideas-landing {
+  td {
+    line-height: 35px;
+    font-size: 11.2px;
+    letter-spacing: 0.8px;
+    text-align: left;
+  }
 
-#ideas-landing tr:hover p:first-child {
-  text-decoration: underline;
-}
+  tr:hover p:first-child {
+    text-decoration: underline;
+  }
 
-#ideas-landing tbody > tr {
-  height: 35px;
+  tbody > tr {
+    height: 35px;
+  }
 }
 
 td > p {
@@ -221,12 +229,10 @@ tbody > tr:nth-child(odd) {
   background-color: #555555;
 }
 
-td:nth-child(1) {
-  padding: 5px;
-}
-
-td:nth-last-child(1) {
-  padding: 5px;
+td {
+  &:nth-child(1), &:nth-last-child(1) {
+    padding: 5px;
+  }
 }
 
 /* Cancel Button */
@@ -241,14 +247,14 @@ td:nth-last-child(1) {
   text-align: center;
   justify-content: center;
   align-items: center;
-}
 
-#meetings-cancel:hover {
-  border: solid 1.5px #fff;
-}
+  &:hover {
+    border: solid 1.5px #fff;
+  }
 
-#meetings-cancel:active {
-  text-decoration: underline;
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 /* Minions */
@@ -263,10 +269,10 @@ td:nth-last-child(1) {
   position: absolute;
   top: 6px;
   left: 4px;
-}
 
-#back-button img {
-  width: 25.2px;
+  img {
+    width: 25.2px;
+  }
 }
 
 .minions-label {
@@ -292,10 +298,10 @@ td:nth-last-child(1) {
   font-size: 9px;
   letter-spacing: 0.7px;
   margin: 5px 5px;
-}
 
-.minion-grid:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .minion-thumbnail {
@@ -349,7 +355,6 @@ td:nth-last-child(1) {
   #add-minion-button {
     width: 51px;
   }
-
 }
 
 #ideas-landing {
@@ -360,10 +365,10 @@ td:nth-last-child(1) {
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
-}
 
-#ideas-landing table {
-  width: 100%;
+  table {
+    width: 100%;
+  }
 }
 
 #add-idea-td {
@@ -382,16 +387,16 @@ td:nth-last-child(1) {
   margin: 20px auto;
   font-size: 12.6px;
   font-weight: bold;
-  letter-spacing: 0.9px;;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-#total-money p {
-  padding: 5px;
-  background-color: #ff4f58;
+  p {
+    padding: 5px;
+    background-color: #ff4f58;
+  }
 }
 
 /* All Ideas media queries */
@@ -411,10 +416,11 @@ td:nth-last-child(1) {
     height: 32px;
   }
 
-  #ideas-landing th, #ideas-landing td {
-    font-size: 16px;
+  #ideas-landing {
+    th, td {
+      font-size: 16px;
+    }
   }
-
 }
 
 #single-idea-landing {
@@ -428,7 +434,7 @@ td:nth-last-child(1) {
 }
 
 .idea-description {
-   margin: 5px 5px;
+  margin: 5px 5px;
   padding: 5px;
   width: 258px;
   height: 126px;
@@ -524,14 +530,14 @@ td:nth-last-child(1) {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-}
 
-.save-button:hover {
-  border: solid 1.5px #fff;
-}
+  &:hover {
+    border: solid 1.5px #fff;
+  }
 
-.save-button:active {
-  text-decoration: underline;
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 .disabled {
@@ -539,19 +545,21 @@ td:nth-last-child(1) {
   background-color: #565555;
 }
 
-.save-button.disabled {
-  width: 180px;
-  height: 40px;
-}
+.save-button {
+  &.disabled {
+    width: 180px;
+    height: 40px;
+  }
 
-.save-button:hover {
-  text-decoration: underline;
-}
+  &:hover {
+    text-decoration: underline;
+  }
 
-.save-button.disabled:hover {
-  width: 180px;
-  height: 40px;
-  text-decoration: none;
+  &.disabled:hover {
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+  }
 }
 
 /* Single Idea media queries */
@@ -585,7 +593,6 @@ td:nth-last-child(1) {
     height: 28px;
     width: 75px;
   }
-
 }
 
 #single-minion-landing {
@@ -600,9 +607,9 @@ td:nth-last-child(1) {
 
 .minion-description {
   width: 259px;
-	height: 142.4px;
-	background-color: #565555;
-	border: solid 1.4px #fffefe;
+  height: 142.4px;
+  background-color: #565555;
+  border: solid 1.4px #fffefe;
 }
 
 .minion-details, .work-details {
@@ -624,30 +631,30 @@ td:nth-last-child(1) {
   letter-spacing: 0.2px;
   overflow-y: scroll;
   width: 100%;
-}
 
-.work-table td {
-  padding: 4px 2px;
-}
+  td {
+    padding: 4px 2px;
+  }
 
-.work-table tr {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
+  tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
 
-.work-table img {
-  width: 17px;
-  transform: rotate(45deg);
-}
+  img {
+    width: 17px;
+    transform: rotate(45deg);
+  }
 
-.work-table input {
-  font-family: 'Source Code Pro', monospace;
-  background-color: #565555;
-  border: solid 1.4px #fffefe;
-  color: #fff;
+  input {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #565555;
+    border: solid 1.4px #fffefe;
+    color: #fff;
+  }
 }
 
 .work-title-edit {
@@ -655,7 +662,7 @@ td:nth-last-child(1) {
 }
 
 .work-desc-edit {
-  width: 94px
+  width: 94px;
 }
 
 .work-hours-edit {
@@ -671,7 +678,7 @@ td:nth-last-child(1) {
 }
 
 .work-desc {
-  width: 76px
+  width: 76px;
 }
 
 .work-hours {
@@ -691,14 +698,14 @@ td:nth-last-child(1) {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-}
 
-.add-work-button:hover {
-  border: solid 1.5px #fff;
-}
+  &:hover {
+    border: solid 1.5px #fff;
+  }
 
-.add-work-button:active {
-  text-decoration: underline;
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 .work-save-button {
@@ -709,14 +716,14 @@ td:nth-last-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.work-save-button:hover {
-  border: solid 1.5px #fff;
-}
+  &:hover {
+    border: solid 1.5px #fff;
+  }
 
-.work-save-button:active {
-  text-decoration: underline;
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 #minion-save {
@@ -724,11 +731,11 @@ td:nth-last-child(1) {
   align-items: center;
   justify-content: center;
   width: 52.5px;
-	height: 19.6px;
+  height: 19.6px;
   background-color: #ff4f58;
-	font-size: 12.6px;
-	font-weight: bold;
-	letter-spacing: 0.9px;
+  font-size: 12.6px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
   text-align: center;
   margin: 10px;
   text-transform: uppercase;
@@ -737,15 +744,15 @@ td:nth-last-child(1) {
 .minion-description {
   padding: 5px;
   font-size: 11.2px;
-	font-weight: 500;
-	line-height: 1.31;
-	letter-spacing: 0.9px;
+  font-weight: 500;
+  line-height: 1.31;
+  letter-spacing: 0.9px;
   text-align: left;
   overflow-y: scroll;
-}
 
-.minion-description p {
-  padding-top: 5px;
+  p {
+    padding-top: 5px;
+  }
 }
 
 .minion-edit-row {
@@ -787,14 +794,14 @@ td:nth-last-child(1) {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-}
 
-.minion-save-button:hover {
-  border: solid 1.5px #fff;
-}
+  &:hover {
+    border: solid 1.5px #fff;
+  }
 
-.minion-save-button:active {
-  text-decoration: underline;
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 /* Single Minion media queries */
@@ -810,16 +817,18 @@ td:nth-last-child(1) {
     font-size: 16px;
   }
 
-  .minion-edit input {
-    font-family: 'Source Code Pro', monospace;
-    background-color: #565555;
-    border: solid 1.4px #fffefe;
-    color: #fff;
-    min-width: 200px;
-  }
+  .minion-edit {
+    input {
+      font-family: 'Source Code Pro', monospace;
+      background-color: #565555;
+      border: solid 1.4px #fffefe;
+      color: #fff;
+      min-width: 200px;
+    }
 
-  .minion-edit textarea {
-    min-height: 100px;
+    textarea {
+      min-height: 100px;
+    }
   }
 
   .minion-edit-label {
@@ -844,7 +853,7 @@ td:nth-last-child(1) {
   }
 
   .work-desc-edit {
-    width: 150px
+    width: 150px;
   }
 
   .work-hours-edit {
@@ -855,7 +864,6 @@ td:nth-last-child(1) {
     font-size: 14px;
     min-width: 100px;
   }
-
 }
 
 .back-button {
