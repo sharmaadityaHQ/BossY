@@ -26,7 +26,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45px;
+  height: 50px;
   margin-top: 23px;
 }
 
@@ -77,8 +77,8 @@ a {
 }
 
 .launch-icon {
-  height: 67px;
-  width: 67px;
+  height: 80px;
+  width: 80px;
 }
 
 .label {
@@ -103,11 +103,12 @@ a {
 .meetings-label {
   text-transform: uppercase;
   margin: 12px auto;
+  font-size: 30px;
 }
 
 #meetings-landing {
   margin: 3.5px;
-  width: 287px;
+  width: 340px;
   height: 341px;
   border: solid 1.5px #ff4f58;
   overflow-y: scroll;
@@ -116,38 +117,38 @@ a {
 /* Landing page media queries */
 @media only screen and (min-width: 720px) {
   #logo {
-    height: 72px;
+    height: 120px;
     margin-top: 40px;
   }
 
   #title {
-    font-size: 40px;
+    font-size: 55px;
     letter-spacing: 2px;
   }
 
   #launch-buttons {
-    width: 620px;
+    width: 850px;
     margin-bottom: 10px;
   }
 
   .launch-button {
-    width: 300px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
   }
 
   .launch-icon {
-    height: 120px;
-    width: 120px;
+    height: 150px;
+    width: 150px;
   }
 
   .launch-label {
-    font-size: 18px;
+    font-size: 25px;
     letter-spacing: 1.2px;
     margin-top: 15px;
   }
 
   #meetings-landing {
-    width: 620px;
+    width: 700px;
     height: 509px;
   }
 
@@ -175,7 +176,7 @@ table {
 }
 
 thead {
-  font-size: 12.6px;
+  font-size: 18px;
   letter-spacing: 0.9px;
   text-align: left;
   text-transform: uppercase;
@@ -215,6 +216,7 @@ td > p {
   line-height: 1.5;
   vertical-align: middle;
   display: inline-block;
+  font-size: 13px;
 }
 
 tbody > tr:nth-child(odd) {
@@ -232,8 +234,8 @@ td:nth-last-child(1) {
 /* Cancel Button */
 
 #meetings-cancel {
-  width: 106px;
-  height: 26px;
+  width: 130px;
+  height: 40px;
   margin: 10px;
   background-color: #ff4f58;
   text-transform: uppercase;
@@ -256,7 +258,7 @@ td:nth-last-child(1) {
 #minions-landing {
   border: solid 1.5px #ff4f58;
   min-height: 394px;
-  width: 287px;
+  width: 340px;
 }
 
 #back-button {
@@ -270,7 +272,7 @@ td:nth-last-child(1) {
 }
 
 .minions-label {
-  font-size: 12px;
+  font-size: 20px;
   letter-spacing: 0.8px;
   margin: 9px 0px;
 }
@@ -283,7 +285,7 @@ td:nth-last-child(1) {
 }
 
 .minion-grid {
-  width: 61px;
+  width: 80px;
   min-height: 107.16px;
   display: flex;
   flex-direction: column;
@@ -299,7 +301,7 @@ td:nth-last-child(1) {
 }
 
 .minion-thumbnail {
-  width: 50px;
+  width: 60px;
   margin: 5px 0px;
 }
 
@@ -309,7 +311,7 @@ td:nth-last-child(1) {
 
 .x-button {
   transform: rotate(45deg);
-  width: 12px;
+  width: 16px;
 }
 
 #add-minion-button-grid {
@@ -317,43 +319,43 @@ td:nth-last-child(1) {
 }
 
 #add-minion-button {
-  width: 25px;
+  width: 32px;
 }
 
 /* All Minions media queries */
 @media only screen and (min-width: 720px) {
   #minions-landing {
-    width: 620px;
+    width: 700px;
     height: 762px;
   }
 
   .minion-grid {
-    width: 120px;
+    width: 140px;
     font-size: 14px;
     letter-spacing: 1.2px;
   }
 
   .minion-thumbnail {
-    width: 102px;
+    width: 110px;
   }
 
   .minions-label {
-    font-size: 18px;
+    font-size: 30px;
     letter-spacing: 1.2px;
   }
 
   .x-button {
-    width: 20px;
+    width: 25px;
   }
 
   #add-minion-button {
-    width: 51px;
+    width: 56px;
   }
 
 }
 
 #ideas-landing {
-  width: 287px;
+  width: 300px;
   height: 394px;
   border: solid 2px #ff4f58;
   display: flex;
@@ -397,7 +399,7 @@ td:nth-last-child(1) {
 /* All Ideas media queries */
 @media only screen and (min-width: 720px) {
   #ideas-landing {
-    width: 620px;
+    width: 700px;
     height: 762px;
   }
 
@@ -418,7 +420,7 @@ td:nth-last-child(1) {
 }
 
 #single-idea-landing {
-  width: 287px;
+  width: 350px;
   height: 394px;
   border: solid 2.5px #ff4f58;
   display: flex;
@@ -557,7 +559,7 @@ td:nth-last-child(1) {
 /* Single Idea media queries */
 @media only screen and (min-width: 720px) {
   #single-idea-landing {
-    width: 620px;
+    width: 700px;
     height: 762px;
     justify-content: flex-start;
   }
