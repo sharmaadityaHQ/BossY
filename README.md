@@ -16,4 +16,6 @@ You should have `node` installed in your system.
 Start working on a feature by making a separate branch and make commits with meaningful messages. Feel free to open [new-issues](https://github.com/sharmaaditya570191/BossY/issues/new) if you encounter bugs or want to suggest some enhancement in the app.  
 ### Testing  
 Tests are given in the `test/test.js` file. To run the tests, first open the root project directory in your terminal. Then run `npm test`. You will see a list of tests that ran with information about whether or not each test passed. 
+### Contact Us
+In case of any query, feel free to reach us [slack channel](https://slack.com/signin)
 
