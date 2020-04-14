@@ -26,6 +26,7 @@ import Home from './components/Home'
 import AllIdeas from './components/AllIdeas'
 import Idea from './components/Idea'
 import Minion from './components/Minion'
+import FunctionComp2 from './components/FunctionComp2'
 
 const appEnter = nextRouterState => {
   Promise.all([
@@ -109,6 +110,7 @@ ReactDOM.render(
     <Router history={hashHistory}>
       <Route path='/' component={App} onEnter={appEnter}>
         <IndexRoute component={Home} />
+		<Route path='/functionalComp2' component={FunctionComp2} />
         <Route path='/minions' component={AllMinions} />
         <Route
           path='/minions/new'
