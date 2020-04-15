@@ -20,10 +20,10 @@ class Idea extends Component {
     }
   }
 
-  componentWillReceiveProps (newProps) {
-    this.setState({
+  static getDerivedStateFromProps(newProps, state) {
+    return {
       idea: newProps.idea
-    })
+    };
   }
 
   handleChange = e => {
@@ -78,7 +78,7 @@ class Idea extends Component {
         </div>
         <div className='button back-button'>
           <Link to='/ideas'>
-            <img className='button' src={Arrow} />
+            <img className='button' src={Arrow} alt='arrow' />
           </Link>
         </div>
       </div>

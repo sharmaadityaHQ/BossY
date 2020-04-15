@@ -1,9 +1,13 @@
 const express = require('express');
+const helmet = require('helmet') 
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
 const app = express();
 module.exports = app;
+
+// Add middleware for http headers
+app.use(helmet()) 
 
 /* Do not change the following line! It is required for testing and allowing
 *  the frontend application to interact as planned with the api server
