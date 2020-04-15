@@ -26,6 +26,7 @@ import Home from './components/Home'
 import AllIdeas from './components/AllIdeas'
 import Idea from './components/Idea'
 import Minion from './components/Minion'
+import CookiePolicy from './components/CookiePolicy'
 
 const appEnter = nextRouterState => {
   Promise.all([
@@ -124,6 +125,7 @@ ReactDOM.render(
         <Route path='/ideas/new' onEnter={newIdeaEnter} components={Idea} />
         <Route path='/ideas/:id' onEnter={singleIdeaEnter} components={Idea} />
       </Route>
+      <Route path='/cookiePolicy' component={CookiePolicy} />
     </Router>
   </Provider>,
   document.getElementById('root')
