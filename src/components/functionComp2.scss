@@ -59,10 +59,22 @@
 		flex-basis: 50%;
 		max-width: 50%;
 	}
+	.bg-lgt-blue {
+		.card {
+			flex-basis: 50%;
+			max-width: 50%;
+		}
+	}
 }
 @media screen and (max-width: "576px") {
 	.card {
 		flex-basis: 100%;
 		max-width: 100%;
+	}
+	.bg-lgt-blue {
+		.card {
+			flex-basis: 100%;
+			max-width: 100%;
+		}
 	}
 }
