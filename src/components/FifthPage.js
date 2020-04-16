@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {ProgressBar}  from './ProgressBar'
 import './FifthPage.scss'
 
-class FifthPage extends Component {
-    render(){
+export default function FifthPage() {
+    
         return(
             <div id="fifthpage">
                 <div id="fifthmid">
@@ -37,9 +37,9 @@ class FifthPage extends Component {
             </div>
             
         )
-    }
+    
 
 
 }
 
-export default FifthPage
+
