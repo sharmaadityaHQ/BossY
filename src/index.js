@@ -27,6 +27,7 @@ import AllIdeas from './components/AllIdeas'
 import Idea from './components/Idea'
 import Minion from './components/Minion'
 import CookiePolicy from './components/CookiePolicy'
+import FourthContent from './components/fourth-content'
 
 const appEnter = nextRouterState => {
   Promise.all([
@@ -125,7 +126,11 @@ ReactDOM.render(
         <Route path='/ideas/new' onEnter={newIdeaEnter} components={Idea} />
         <Route path='/ideas/:id' onEnter={singleIdeaEnter} components={Idea} />
       </Route>
+<<<<<<< HEAD
       <Route path='/cookiePolicy' component={CookiePolicy} />
+=======
+      <Route path='/fourthContent' component={FourthContent}/>
+>>>>>>> 7c2148b2c4da717a8c474c402f9854b5660b4bc3
     </Router>
   </Provider>,
   document.getElementById('root')
