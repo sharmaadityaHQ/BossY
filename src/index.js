@@ -27,6 +27,7 @@ import AllIdeas from './components/AllIdeas'
 import Idea from './components/Idea'
 import Minion from './components/Minion'
 import FunctionComp2 from './components/FunctionComp2'
+import FourthContent from './components/fourth-content'
 
 const appEnter = nextRouterState => {
   Promise.all([
@@ -126,6 +127,7 @@ ReactDOM.render(
         <Route path='/ideas/new' onEnter={newIdeaEnter} components={Idea} />
         <Route path='/ideas/:id' onEnter={singleIdeaEnter} components={Idea} />
       </Route>
+      <Route path='/fourthContent' component={FourthContent}/>
     </Router>
   </Provider>,
   document.getElementById('root')
