@@ -26,6 +26,7 @@ import Home from './components/Home'
 import AllIdeas from './components/AllIdeas'
 import Idea from './components/Idea'
 import Minion from './components/Minion'
+import FunctionComp2 from './components/FunctionComp2'
 import FourthContent from './components/fourth-content'
 
 const appEnter = nextRouterState => {
@@ -108,6 +109,7 @@ const allIdeasEnter = () => {
 ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory}>
+	<Route path='/functionalComp2' component={FunctionComp2} />
       <Route path='/' component={App} onEnter={appEnter}>
         <IndexRoute component={Home} />
         <Route path='/minions' component={AllMinions} />
