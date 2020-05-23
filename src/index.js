@@ -26,6 +26,7 @@ import Home from './components/Home'
 import AllIdeas from './components/AllIdeas'
 import Idea from './components/Idea'
 import Minion from './components/Minion'
+import ContactUs from './components/ContactUs'
 import FunctionComp2 from './components/FunctionComp2'
 import FourthContent from './components/fourth-content'
 
@@ -112,6 +113,7 @@ ReactDOM.render(
 	<Route path='/functionalComp2' component={FunctionComp2} />
       <Route path='/' component={App} onEnter={appEnter}>
         <IndexRoute component={Home} />
+		<Route path="/contactUs" component={ContactUs} />
         <Route path='/minions' component={AllMinions} />
         <Route
           path='/minions/new'
