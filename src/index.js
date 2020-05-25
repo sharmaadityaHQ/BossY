@@ -26,6 +26,7 @@ import Home from './components/Home'
 import AllIdeas from './components/AllIdeas'
 import Idea from './components/Idea'
 import Minion from './components/Minion'
+import CookiePolicy from './components/CookiePolicy'
 import ContactUs from './components/ContactUs'
 import FunctionComp2 from './components/FunctionComp2'
 import FourthContent from './components/fourth-content'
@@ -129,6 +130,7 @@ ReactDOM.render(
         <Route path='/ideas/new' onEnter={newIdeaEnter} components={Idea} />
         <Route path='/ideas/:id' onEnter={singleIdeaEnter} components={Idea} />
       </Route>
+      <Route path='/cookiePolicy' component={CookiePolicy} />
       <Route path='/fourthContent' component={FourthContent}/>
     </Router>
   </Provider>,
