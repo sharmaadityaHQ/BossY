@@ -1,11 +1,13 @@
 const mongoose = require("mongoose");
 
 const WorkSchema = new mongoose.Schema({
-  id: String,
   title: String,
   description: String,
   hours: Number,
-  minionId: String
+  minionId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Minion",
+  }
 });
 
 module.exports = mongoose.model("Work", WorkSchema);
