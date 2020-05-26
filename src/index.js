@@ -26,7 +26,14 @@ import Home from './components/Home'
 import AllIdeas from './components/AllIdeas'
 import Idea from './components/Idea'
 import Minion from './components/Minion'
+
 import FifthPage from './components/FifthPage'
+
+import CookiePolicy from './components/CookiePolicy'
+import ContactUs from './components/ContactUs'
+import FunctionComp2 from './components/FunctionComp2'
+import FourthContent from './components/fourth-content'
+
 
 const appEnter = nextRouterState => {
   Promise.all([
@@ -108,9 +115,14 @@ const allIdeasEnter = () => {
 ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory}>
+	<Route path='/functionalComp2' component={FunctionComp2} />
       <Route path='/' component={App} onEnter={appEnter}>
         <IndexRoute component={Home} />
+
         <Route path="/fifthPage" component={FifthPage} />
+
+		<Route path="/contactUs" component={ContactUs} />
+
         <Route path='/minions' component={AllMinions} />
         <Route
           path='/minions/new'
@@ -126,6 +138,8 @@ ReactDOM.render(
         <Route path='/ideas/new' onEnter={newIdeaEnter} components={Idea} />
         <Route path='/ideas/:id' onEnter={singleIdeaEnter} components={Idea} />
       </Route>
+      <Route path='/cookiePolicy' component={CookiePolicy} />
+      <Route path='/fourthContent' component={FourthContent}/>
     </Router>
   </Provider>,
   document.getElementById('root')
