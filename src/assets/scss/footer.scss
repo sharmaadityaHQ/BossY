@@ -12,6 +12,8 @@
         width: 10%;
     }
     .footer-section1{
+        // margin-right: 20px;
+        margin-top: 40px;
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -21,11 +23,22 @@
     .footer-section1-heading{
         color: white;
         background-color: rgb(52, 51, 82);
+        font-size: 28px;
     }
     .footer-section1-content{
         background-color: rgb(52, 51, 82);
         color: white;
         font-size: 10px;
+        margin-right: 20px;
+    }
+    .footer-section1-images{
+        margin-right: 20px;
+        background-color: rgb(52, 51, 82);
+    }
+    .footer-section1-images img{
+        border-radius: 50%;
+        margin-right: 15px;
+        width: 40px;
     }
     .footer-section2{
         background-color: rgb(52, 51, 82);
@@ -34,6 +47,8 @@
     .footer-section2 h3{
         background-color: rgb(52, 51, 82);
         color: white;
+        font-size: 20px;
+        margin-top: 30px;
     }
     .footer-section2-item1{
         display: flex;
@@ -42,14 +57,26 @@
     .footer-section2-item1 p{
         color: white;
         background-color: rgb(52, 51, 82);
+        font-size: 10px;
+    }
+    .footer-section2-item1 img{
+        margin-top: 20px;
+        background-color: rgb(52, 51, 82);
+        height: 20px;
     }
     .footer-section2-item2{
         display: flex;
         background-color: rgb(52, 51, 82);
     }
+    .footer-section2-item2 img{
+        margin-top: 20px;
+        background-color: rgb(52, 51, 82);
+        height: 20px;
+    }
     .footer-section2-item2 p {
         color: white;
         background-color: rgb(52, 51, 82);
+        font-size: 10px;
     }
     .footer-section2-item3{
         display: flex;
@@ -58,6 +85,12 @@
     .footer-section2-item3 p{
         color: white;
         background-color: rgb(52, 51, 82);
+        font-size: 10px;
+    }
+    .footer-section2-item3 img{
+        margin-top: 20px;
+        background-color: rgb(52, 51, 82);
+        height: 20px;
     }
     .footer-section2-item4{
         display: flex;
@@ -66,6 +99,12 @@
     .footer-section2-item4 p{
         color: white;
         background-color: rgb(52, 51, 82);
+        font-size: 10px;
+    }
+    .footer-section2-item4 img{
+        margin-top: 20px;
+        background-color: rgb(52, 51, 82);
+        height: 20px;
     }
     .footer-section3{
         background-color: rgb(52, 51, 82);
@@ -80,14 +119,27 @@
     .footer-section3-p p{
         color: white;
         background-color: rgb(52, 51, 82);
+        margin-top: 60px;
+        font-size: 14px;
+    }
+    .footer-section3-content img{
+        background-color: rgb(51, 174, 233);
+        color: white;
+        border-radius: 100%;
+        margin-top: 12px;
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
     }
     .footer-section3-content h3{
-        font-size: 18px;
+        font-size: 15px;
         color: white;
         background-color: rgb(52, 51, 82);
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .footer-section3-content h5{
-        font-size: 12px;
+        font-size: 8px;
         color: white;
         background-color: rgb(52, 51, 82);
     }
@@ -99,6 +151,8 @@
         font-size: 28px;
         background-color: rgb(52, 51, 82);
         color: white;
+        margin-top: 30px;
+        font-size: 20px;
     }
     .footer-section4 p{
         font-size: 12px;
@@ -112,6 +166,7 @@
         border-color: white;
         background-color: rgb(52, 51, 82);
         border-radius: 0.3em;
+        margin-right: 17px;
     }
 }
   
