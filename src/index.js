@@ -114,7 +114,7 @@ ReactDOM.render(
 	<Route path='/functionalComp2' component={FunctionComp2} />
       <Route path='/' component={App} onEnter={appEnter}>
         <IndexRoute component={Home} />
-		<Route path="/contactUs" component={ContactUs} />
+		    <Route path="/contactUs" component={ContactUs} />
         <Route path='/minions' component={AllMinions} />
         <Route
           path='/minions/new'

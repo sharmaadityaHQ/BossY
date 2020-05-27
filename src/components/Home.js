@@ -7,6 +7,7 @@ import { cancelMeetingsThunk } from '../store/meetings'
 import AllMeetings from './AllMeetings'
 import minionIcon from '../assets/img/minion_icon_home.svg'
 import minionMoney from '../assets/img/minion_icon_money.svg'
+import Footer from './Footer';
 
 const Home = ({ cancelMeetings }) => {
   return (
@@ -29,6 +30,7 @@ const Home = ({ cancelMeetings }) => {
       <div id='meetings-cancel' className='button' onClick={cancelMeetings}>
         Cancel All
       </div>
+      <Footer/>
     </div>
   )
 }
