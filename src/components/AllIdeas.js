@@ -60,7 +60,7 @@ const AllIdeas = ({ ideas }) => {
       </div>
       <div className='button back-button'>
         <Link to='/'>
-          <img className='button' src={arrow} />
+          <img className='button' src={arrow} alt='arrow' />
         </Link>
       </div>
     </div>

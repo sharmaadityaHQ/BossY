@@ -1,32 +1,30 @@
-import ReactDOM from 'react-dom'
-import React from 'react'
-import { Provider } from 'react-redux'
-import { Router } from '@reach/router'
-import { createHashHistory } from 'history'
-import axios from 'axios'
-import * as serviceWorker from './serviceWorker'
-import store from './store/index'
-import '../src/assets/css/reset.css'
-import '../src/assets/css/style.css'
-
-import { setMinions } from './store/minions'
-import { setSelectedMinion } from './store/selectedMinion'
-import { setIdeas } from './store/ideas'
-import { setSelectedIdea } from './store/selectedIdea'
-import { setWork } from './store/work'
-import { setMeetings } from './store/meetings'
-import {
-  setIdeaEditing,
-  setMinionEditing,
-  resetEditingState
-} from './store/appState'
-
-import App from './components/App'
-import AllMinions from './components/AllMinions'
-import Home from './components/Home'
-import AllIdeas from './components/AllIdeas'
-import Idea from './components/Idea'
-import Minion from './components/Minion'
+import { Router } from '@reach/router';
+import axios from 'axios';
+import { createHashHistory } from 'history';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import '../src/assets/css/reset.css';
+import '../src/assets/css/style.css';
+import AllIdeas from './components/AllIdeas';
+import AllMinions from './components/AllMinions';
+import App from './components/App';
+import ContactUs from './components/ContactUs';
+import CookiePolicy from './components/CookiePolicy';
+import FourthContent from './components/fourth-content';
+import FunctionComp2 from './components/FunctionComp2';
+import Home from './components/Home';
+import Idea from './components/Idea';
+import Minion from './components/Minion';
+import * as serviceWorker from './serviceWorker';
+import { resetEditingState, setIdeaEditing, setMinionEditing } from './store/appState';
+import { setIdeas } from './store/ideas';
+import store from './store/index';
+import { setMeetings } from './store/meetings';
+import { setMinions } from './store/minions';
+import { setSelectedIdea } from './store/selectedIdea';
+import { setSelectedMinion } from './store/selectedMinion';
+import { setWork } from './store/work';
 
 const appEnter = nextRouterState => {
   Promise.all([
@@ -116,6 +114,8 @@ ReactDOM.render(
     <Router history={history}>
       <App path='/' onEnter={appEnter()}>
         <Home path="/" />
+        <FunctionComp2 path="/functionalComp2"/>
+        <ContactUs path="/contactUs"/>
         <AllMinions path='/minions'/>
         <Minion
           path='/minions/new'
@@ -128,6 +128,8 @@ ReactDOM.render(
         <AllIdeas path='/ideas' onEnter={allIdeasEnter()} />
         <Idea path='/ideas/new' onEnter={newIdeaEnter} />
         <Idea path='/ideas/:id' onEnter={singleIdeaEnter} />
+        <CookiePolicy path="/cookiePolicy"/>
+        <FourthContent path="/fourthContent"/>
       </App>
     </Router>
   </Provider>,
