@@ -121,7 +121,8 @@ ReactDOM.render(
 
         <Route path="/fifthPage" component={FifthPage} />
 
-		<Route path="/contactUs" component={ContactUs} />
+		
+		    <Route path="/contactUs" component={ContactUs} />
 
         <Route path='/minions' component={AllMinions} />
         <Route
