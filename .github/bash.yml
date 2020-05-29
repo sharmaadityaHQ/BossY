@@ -1,0 +1,4 @@
+action "Setup" {
+  uses = "jcblw/bash@master"
+  args = ["cat <<<$MY_VAR > file.csv"]
+}
