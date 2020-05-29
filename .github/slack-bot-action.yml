@@ -1,0 +1,8 @@
+action "Notify Slack" {
+  uses = "krider2010/slack-bot-action@1.0.1"
+  secrets = ["SLACK_BOT_TOKEN", "CONVERSATION_ID"]
+  env = {
+    MESSAGE_FILE = "slack-message.json"
+  }
+  needs = ["Another Action To Generate slack-message.json"]
+}
