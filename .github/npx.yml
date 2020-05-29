@@ -1,0 +1,9 @@
+workflow "Build" {
+  on = "push"
+  resolves = ["Publish"]
+}
+
+action "Build w/ Webpack" {
+  uses = "mikeal/npx@master"
+  args = "webpack"
+}
