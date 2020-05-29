@@ -31,7 +31,6 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^26.0.1",
     "faker": "^4.1.0",
     "react-redux": "^5.0.6",
     "react-router": "^3.0.0",
