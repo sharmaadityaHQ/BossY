@@ -22,13 +22,13 @@ You should have `node` installed in your system.
 
 ## Tech stack used 💻
 
-- Front end : It is is made using React, HTML and CSS and you can customize the look of the Boss Machine by accessing the code in the `src` folder. 
+- Front end : It is made using React, HTML and CSS and you can customize the look of the Boss Machine by accessing the code in the `src` folder. 
 
-- Back end : It is made using `Express.js` and is present in the `server` folder.  
+- Back end : It is made using `Express.js` and is present in the [server](https://github.com/sharmaaditya570191/BossY/tree/master/server) folder.  
 
-- Data base : It is organised using JavaScript and is present in `db.js` under `server` directory. The database uses `faker.js` to generate massive amounts of realistic fake data in `Node.js` and the `browser`.
+- Data base : It is organised using JavaScript and is present in [db.js](https://github.com/sharmaaditya570191/BossY/blob/master/server/db.js) under `server` directory. The database uses `faker.js` to generate massive amounts of realistic fake data in `Node.js` and the `browser`.
 
-- Tests ⚠️ : The tests are written using Mocha and Chai as the assertion library and are present in the `test` folder.  
+- Tests ⚠️ : The tests are written using Mocha and Chai as the assertion library and are present in the [test](https://github.com/sharmaaditya570191/BossY/tree/master/test) folder.  
 
 
 ## Contribution 🤝 
@@ -40,7 +40,7 @@ Before contributing to this project do check [CONTRIBUTING.md](./CONTRIBUTING.md
 
 ## Testing 🧪 
 
-Tests are given in the `test/test.js` file. To run the tests, first open the root project directory in your terminal. Then run `npm test`. You will see a list of tests that ran with information about whether or not each test passed. 
+Tests are given in the [test/test.js](https://github.com/sharmaaditya570191/BossY/blob/master/test/test.js) file. To run the tests, first open the root project directory in your terminal. Then run `npm test`. You will see a list of tests that ran with information about whether or not each test passed. 
 
 
 ## Contact Us 📝 
