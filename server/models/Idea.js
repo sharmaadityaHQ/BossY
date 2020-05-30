@@ -1,14 +1,12 @@
-const mongoose = require('mongoose');
-
+import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
-
-var ideaSchema = new Schema({
+const ideaSchema = new Schema({
     name:String,
     description:String,
     weeklyRevenue:Number,
     numWeeks:Number
   });
   
-  const Idea = mongoose.model('Idea', ideaSchema);
+ export default mongoose.model('Idea', ideaSchema);
    
-  module.exports=Idea;
+  

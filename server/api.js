@@ -1,7 +1,7 @@
-const express = require('express')
-const apiRouter = express.Router()
+import express from 'express';
+const apiRouter = express.Router();
 
-const {
+import {
   addToDatabase,
   getAllFromDatabase,
   getFromDatabaseById,
@@ -9,9 +9,9 @@ const {
   deleteFromDatabasebyId,
   deleteAllFromDatabase,
   createMeeting
-} = require('./db')
+} from './db'
 
-const checkMillionDollarIdea = require('./checkMillionDollarIdea')
+import checkMillionDollarIdea from './checkMillionDollarIdea'
 
 apiRouter.get('/minions', (req, res, next) => {
   const minions = getAllFromDatabase('minions')
@@ -185,4 +185,4 @@ apiRouter.delete('/minions/:minionId/work/:workId', (req, res, next) => {
   }
 })
 
-module.exports = apiRouter
+export default apiRouter
