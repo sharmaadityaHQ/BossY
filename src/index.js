@@ -4,8 +4,19 @@ import { createHashHistory } from 'history';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import store from './store/index';
 import '../src/assets/css/reset.css';
 import '../src/assets/css/style.css';
+
+import * as serviceWorker from './serviceWorker';
+import { resetEditingState, setIdeaEditing, setMinionEditing } from './store/appState';
+import { setIdeas } from './store/ideas';
+import { setMeetings } from './store/meetings';
+import { setMinions } from './store/minions';
+import { setSelectedIdea } from './store/selectedIdea';
+import { setSelectedMinion } from './store/selectedMinion';
+import { setWork } from './store/work';
+
 import AllIdeas from './components/AllIdeas';
 import AllMinions from './components/AllMinions';
 import App from './components/App';
@@ -16,15 +27,6 @@ import FunctionComp2 from './components/FunctionComp2';
 import Home from './components/Home';
 import Idea from './components/Idea';
 import Minion from './components/Minion';
-import * as serviceWorker from './serviceWorker';
-import { resetEditingState, setIdeaEditing, setMinionEditing } from './store/appState';
-import { setIdeas } from './store/ideas';
-import store from './store/index';
-import { setMeetings } from './store/meetings';
-import { setMinions } from './store/minions';
-import { setSelectedIdea } from './store/selectedIdea';
-import { setSelectedMinion } from './store/selectedMinion';
-import { setWork } from './store/work';
 
 const appEnter = nextRouterState => {
   Promise.all([
@@ -111,6 +113,7 @@ let history = createHashHistory({
 
 ReactDOM.render(
   <Provider store={store}>
+<<<<<<< HEAD
     <Router history={history}>
       <App path='/' onEnter={appEnter()}>
         <Home path="/" />
@@ -118,6 +121,20 @@ ReactDOM.render(
         <ContactUs path="/contactUs"/>
         <AllMinions path='/minions'/>
         <Minion
+=======
+    <Router history={hashHistory}>
+	<Route path='/functionalComp2' component={FunctionComp2} />
+      <Route path='/' component={App} onEnter={appEnter}>
+        <IndexRoute component={Home} />
+
+        <Route path="/fifthPage" component={FifthPage} />
+
+		
+		    <Route path="/contactUs" component={ContactUs} />
+
+        <Route path='/minions' component={AllMinions} />
+        <Route
+>>>>>>> e8cfcc38801ed356e8809137296c2a586ee7f6eb
           path='/minions/new'
           onEnter={newMinionEnter}
         />
