@@ -27,6 +27,7 @@ import FunctionComp2 from './components/FunctionComp2';
 import Home from './components/Home';
 import Idea from './components/Idea';
 import Minion from './components/Minion';
+import FifthPage from './components/FifthPage';
 
 const appEnter = nextRouterState => {
   Promise.all([
@@ -113,28 +114,14 @@ let history = createHashHistory({
 
 ReactDOM.render(
   <Provider store={store}>
-<<<<<<< HEAD
     <Router history={history}>
       <App path='/' onEnter={appEnter()}>
         <Home path="/" />
         <FunctionComp2 path="/functionalComp2"/>
         <ContactUs path="/contactUs"/>
         <AllMinions path='/minions'/>
+        <FifthPage path="/fifthPage"/>
         <Minion
-=======
-    <Router history={hashHistory}>
-	<Route path='/functionalComp2' component={FunctionComp2} />
-      <Route path='/' component={App} onEnter={appEnter}>
-        <IndexRoute component={Home} />
-
-        <Route path="/fifthPage" component={FifthPage} />
-
-		
-		    <Route path="/contactUs" component={ContactUs} />
-
-        <Route path='/minions' component={AllMinions} />
-        <Route
->>>>>>> e8cfcc38801ed356e8809137296c2a586ee7f6eb
           path='/minions/new'
           onEnter={newMinionEnter}
         />
