@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link } from '@reach/router'
 import { connect } from 'react-redux'
 
 import { deleteMinionThunk } from '../store/minions'
