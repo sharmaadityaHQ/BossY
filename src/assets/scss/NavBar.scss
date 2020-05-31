@@ -1,0 +1,33 @@
+.Main{
+    width: 100vw;
+    height: 100px;
+    // background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading{
+    // width: 2vw;
+    font-size: 20px;
+    color: rgb(52, 51, 82);
+    margin-left: 25px;
+    flex-basis: 0% !important;
+}
+.content{
+    display: flex;
+}
+.content h4{
+    margin-right: 50px;
+    font-size: 20px;
+    color: rgb(52, 51, 82);
+}
+.last{
+    // margin-right: 20px;
+}
+.last img{
+    margin-right: 25px;
+}
+.content-2 input{
+    border: none;
+    width: 80vw;
+}
