@@ -1,10 +1,14 @@
-const express = require('express');
-const helmet = require('helmet') 
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const morgan = require('morgan');
+
+import express from 'express';
+import helmet from 'helmet'; 
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import morgan from 'morgan';
+
+require ('dotenv').config();
+
 const app = express();
-module.exports = app;
 
 // Add middleware for http headers
 app.use(helmet()) 
@@ -19,8 +23,21 @@ app.use(morgan('tiny'));
 // Add middleware for handling CORS requests from index.html
 app.use(cors());
 
-// Add middware for parsing request bodies here:
+// Add middleware for parsing request bodies here:
 app.use(bodyParser.json());
+
+// Mongoose options
+const options = {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+};
+
+mongoose
+  .connect(process.env.MONGODB_URL, options)
+  .then(() => console.log(`Database connection established`))
+  .catch((err) => console.error(`There was an error connecting to database, the err is ${err}`));
+
 
 // Mount your existing apiRouter below at the '/api' path.
 const apiRouter = require('./server/api');
@@ -33,3 +50,5 @@ if (!module.parent) {
     console.log(`Server listening on port ${PORT}`);
   });
 }
+
+export default app;

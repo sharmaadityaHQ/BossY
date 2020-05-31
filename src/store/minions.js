@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-import { hashHistory } from 'react-router'
+import { createHashHistory } from "history";
 import { setSelectedMinion } from './selectedMinion';
 
 const SET_MINIONS = 'SET_MINIONS';
@@ -30,6 +29,10 @@ export const updateMinion = minion => {
   }
 }
 
+let history = createHashHistory({
+  hashType: 'slash'
+});
+
 // Thunks
 
 export const createMinionThunk = minion => dispatch => {
@@ -37,7 +40,7 @@ export const createMinionThunk = minion => dispatch => {
   .then(res => res.data)
   .then(createdMinion => {
     dispatch(addMinion(createdMinion));
-    hashHistory.push(`/minions/${createdMinion.id}`);
+    history.push(`/minions/${createdMinion.id}`);
   })
   .catch(console.error.bind(console));
 }
