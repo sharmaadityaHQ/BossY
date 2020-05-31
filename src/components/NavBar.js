@@ -6,7 +6,7 @@ import Cross from '../assets/img/cross.jpg';
 
 const NavBar = ()  => {
 
-    const[search,setSearch] = useState(false);
+    const[search,setSearch] = useState(true);
 
     const searchIcon = () => {
         setSearch(!search)
