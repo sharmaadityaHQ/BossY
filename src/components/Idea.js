@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import { connect } from 'react-redux'
-import { Link } from 'react-router'
-
-import { updateIdeaThunk, createIdeaThunk } from '../store/ideas'
-
-import IdeaDescription from './IdeaDescription'
-import IdeaEdit from './IdeaEdit'
-
-import { isMillionDollarIdea } from '../utils'
-import Arrow from '../assets/img/arrow.svg'
+import { Link } from '@reach/router';
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import Arrow from '../assets/img/arrow.svg';
+import { createIdeaThunk, updateIdeaThunk } from '../store/ideas';
+import { isMillionDollarIdea } from '../utils';
+import IdeaDescription from './IdeaDescription';
+import IdeaEdit from './IdeaEdit';
 
 const Idea = (props) => {
+
+  useEffect(() => {
+    props.id ? props.onEnter({ id: props.id }) : props.onEnter();
+  },[props]);
 
   let editing = props.newIdea ? true : false
   const [state, setState] = useState({

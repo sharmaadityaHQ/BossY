@@ -1,6 +1,5 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
-
 const minionSchema = new Schema(
   {
     full_name: {
@@ -18,5 +17,4 @@ const minionSchema = new Schema(
     timestamps: true,},
 );
 
-
-module.exports = mongoose.model("Minion", minionSchema)
+export default mongoose.model("Minion", minionSchema)
