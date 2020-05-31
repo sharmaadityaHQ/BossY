@@ -1,0 +1,13 @@
+workflow "Access control" {
+  on = "push"
+  resolves = ["Access control"]
+}
+
+
+action "Access control" {
+  uses = "ludeeus/action-accesscontroll@master"
+  env = {
+    ACTION_LEVEL = "admin"
+  }
+  secrets = ["GITHUB_TOKEN"]
+}
