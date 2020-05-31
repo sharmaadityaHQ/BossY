@@ -52,4 +52,4 @@ Tests are given in the [test/test.js](https://github.com/sharmaaditya570191/Boss
 
 Join the BOSSY [slack workspace here](https://join.slack.com/t/bossy-in/shared_invite/zt-eqrnazbm-wCb3HrboYulscaakRlaBPw) 🙌.
 
-[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/sharmaaditya570191/)[![smile please](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/sharmaaditya570191/)
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/sharmaaditya570191/) [![smile please](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://github.com/sharmaaditya570191/)
