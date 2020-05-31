@@ -23,6 +23,7 @@
     "supertest": "^3.0.0"
   },
   "devDependencies": {
+    "eslint": "^7.1.0",
     "faker": "^4.1.0",
     "react-redux": "^5.0.6",
     "react-router": "^3.0.0",
@@ -34,7 +35,8 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "test": "cross-env PORT=8000 mocha --watch",
-    "start-server": "nodemon --watch server.js --watch server/"
+    "start-server": "nodemon --watch server.js --watch server/",
+    "lint": "esLint"
   },
   "eslintConfig": {
     "extends": "react-app"
