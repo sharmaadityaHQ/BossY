@@ -28,7 +28,7 @@ const createMinion = () => {
 
 let workIdCounter = 1
 
-const createWork = minionId => {
+export const createWork = minionId => {
   return {
     id: `${workIdCounter++}`,
     title: `Close deal #${Math.floor(Math.random() * 4) + 3}`,
@@ -48,7 +48,7 @@ const companies = [
   'Pets.com'
 ]
 
-const createIdea = () => {
+export const createIdea = () => {
   const noun = faker.company.bsNoun()
   const name = companies[Math.floor(Math.random() * companies.length)]
   let weeklyRevenue = 0
@@ -69,7 +69,7 @@ const createIdea = () => {
 
 let meetingIdCounter = 1
 
-const createMeeting = () => {
+export const createMeeting = () => {
   const options = [`Discussion about`, `Meeting for`, `Brainstorm`]
   const option = options[Math.floor(Math.random() * options.length)]
   const date = new Date(faker.date.future())
@@ -210,7 +210,7 @@ const findDataArrayByName = name => {
   }
 }
 
-const getAllFromDatabase = modelType => {
+export const getAllFromDatabase = modelType => {
   const model = findDataArrayByName(modelType)
   if (model === null) {
     return null
@@ -218,7 +218,7 @@ const getAllFromDatabase = modelType => {
   return model.data
 }
 
-const getFromDatabaseById = (modelType, id) => {
+export const getFromDatabaseById = (modelType, id) => {
   const model = findDataArrayByName(modelType)
   if (model === null) {
     return null
@@ -228,7 +228,7 @@ const getFromDatabaseById = (modelType, id) => {
   })
 }
 
-const addToDatabase = (modelType, instance) => {
+export const addToDatabase = (modelType, instance) => {
   const model = findDataArrayByName(modelType)
   if (model === null) {
     return null
@@ -240,7 +240,7 @@ const addToDatabase = (modelType, instance) => {
   }
 }
 
-const updateInstanceInDatabase = (modelType, instance) => {
+export const updateInstanceInDatabase = (modelType, instance) => {
   const model = findDataArrayByName(modelType)
   if (model === null) {
     return null
@@ -256,7 +256,7 @@ const updateInstanceInDatabase = (modelType, instance) => {
   }
 }
 
-const deleteFromDatabasebyId = (modelType, id) => {
+export const deleteFromDatabasebyId = (modelType, id) => {
   const model = findDataArrayByName(modelType)
   if (model === null) {
     return null
@@ -272,7 +272,7 @@ const deleteFromDatabasebyId = (modelType, id) => {
   }
 }
 
-const deleteAllFromDatabase = modelType => {
+export const deleteAllFromDatabase = modelType => {
   const model = findDataArrayByName(modelType)
   if (model === null) {
     return null
@@ -281,13 +281,3 @@ const deleteAllFromDatabase = modelType => {
   return model.data
 }
 
-module.exports = {
-  createMeeting,
-  getAllFromDatabase,
-  getFromDatabaseById,
-  addToDatabase,
-  updateInstanceInDatabase,
-  deleteFromDatabasebyId,
-  deleteAllFromDatabase,
-  createWork
-}

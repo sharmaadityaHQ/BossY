@@ -1,6 +1,7 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
+const Schema = mongoose.Schema;
 
-const WorkSchema = new mongoose.Schema({
+const WorkSchema = new Schema({
   title: String,
   description: String,
   hours: Number,
@@ -10,4 +11,4 @@ const WorkSchema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model("Work", WorkSchema);
+export default mongoose.model("Work", WorkSchema);

@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@reach/router": "^1.3.3",
+=======
+>>>>>>> 0be6b6393ac5f2a46a38a671e98fc37edc205f19
+    "@babel/runtime": "^7.10.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -20,7 +24,6 @@
     "mongoose": "^5.9.7",
     "morgan": "^1.8.2",
     "node-sass": "^4.13.1",
-    "nodemon": "^1.11.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
@@ -29,11 +32,12 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
+    "@babel/node": "^7.10.1",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "babel-core": "7.0.0-bridge.0",
     "faker": "^4.1.0",
+    "nodemon": "^1.19.4",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
