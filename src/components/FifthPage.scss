@@ -1,0 +1,140 @@
+  h3,h5{
+    margin: 20px 0;
+    color: white;
+  }  
+  
+  h3 {  
+    font-size: 45px;
+    margin-bottom: 50px
+    
+  }
+  
+  .progress {
+    display: flex;
+    position: relative;
+    opacity: 1;
+    height: 6px;
+    margin: 20px 0;
+  }
+  
+  .progressDiv {
+    height: 25px;
+  }
+
+  .progressAmount {
+    float: right;
+  } 
+
+  .progressBar {
+    animation: progreeAnimate 2s;
+  }
+
+  @keyframes progreeAnimate {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: width;
+    }
+  }
+
+  #fifthpage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+  @media only screen and (max-width: 1225px) and (min-width: 601px) {
+    #fifthmid {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);  
+      width: 100%;
+      margin-top: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) and (min-width: 451px) {
+    #fifthmid {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);  
+      width: 100%;
+      margin-top: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) and (min-width: 0px) {
+    #fifthmid {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);  
+      width: 100%;
+      margin-top: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 1226px) {
+    #fifthmid {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);  
+      width: 100%;
+      margin-top: 25%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    #fifthright {
+      float:right;
+      animation: createBox .9s;
+      width: 50%;
+     }
+  
+    #fifthleft {
+      float: left;
+      width:50%;
+      padding: 50px;
+    }
+  
+    .rightImg {
+      width:768;
+      height:561
+    }
+  }
+  
+  @media only screen and (max-width: 1218px) {
+    #fifthright {
+      animation: createBox .9s;
+      width: 100%;  
+    }
+  
+    #fifthleft {
+      width:100%;
+      padding: 100px;
+    }
+  
+    .rightImg {
+      width:600;
+      height:438
+    }
+  }
+  
+  @keyframes createBox {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }

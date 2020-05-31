@@ -1,13 +1,14 @@
-const express = require('express');
-const helmet = require('helmet') 
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const morgan = require('morgan');
-const app = express();
+
+import express from 'express';
+import helmet from 'helmet'; 
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import morgan from 'morgan';
+
 require ('dotenv').config();
 
-module.exports = app;
+const app = express();
 
 // Add middleware for http headers
 app.use(helmet()) 
@@ -22,7 +23,7 @@ app.use(morgan('tiny'));
 // Add middleware for handling CORS requests from index.html
 app.use(cors());
 
-// Add middware for parsing request bodies here:
+// Add middleware for parsing request bodies here:
 app.use(bodyParser.json());
 
 // Mongoose options
@@ -49,3 +50,5 @@ if (!module.parent) {
     console.log(`Server listening on port ${PORT}`);
   });
 }
+
+export default app;
