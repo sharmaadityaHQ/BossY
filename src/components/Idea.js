@@ -24,7 +24,7 @@ const Idea = (props) => {
       ...state,
       idea: props.idea
     })
-  }, [props.idea])
+  }, [props.idea, state])
 
   const handleChange = e => {
     setState({

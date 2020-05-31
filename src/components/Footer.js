@@ -48,7 +48,7 @@ const Footer = () => {
                     <p>If you want to change your wordpress</p>
                 </div>
                 <div className="footer-section3-content">
-                    <img src={Logo}></img>
+                    <img src={Logo} alt="logo"></img>
                     <div>
                     <h3>Qade Interactive</h3>
                     <h5>4 DAYS AGO</h5>
